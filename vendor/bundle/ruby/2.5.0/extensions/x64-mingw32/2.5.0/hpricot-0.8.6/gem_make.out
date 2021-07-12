@@ -1,0 +1,24 @@
+current directory: C:/Users/t9520/rails/taskleaf/vendor/bundle/ruby/2.5.0/gems/hpricot-0.8.6/ext/hpricot_scan
+C:/Ruby25-x64/bin/ruby.exe -I C:/Ruby25-x64/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210713-25816-i1g1wi.rb extconf.rb
+checking for main() in -lc... no
+creating Makefile
+
+current directory: C:/Users/t9520/rails/taskleaf/vendor/bundle/ruby/2.5.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make DESTDIR\= clean
+
+current directory: C:/Users/t9520/rails/taskleaf/vendor/bundle/ruby/2.5.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make DESTDIR\=
+generating hpricot_scan-x64-mingw32.def
+compiling hpricot_css.c
+hpricot_css.c: In function 'hpricot_css':
+hpricot_css.c:3407:9: warning: comparison between pointer and integer
+ 3407 |  if ( p == eof )
+      |         ^~
+compiling hpricot_scan.c
+linking shared-object hpricot_scan.so
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: hpricot_css.o:hpricot_css.c:(.text+0x14fa): undefined reference to `__chk_fail'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: hpricot_scan.o:hpricot_scan.c:(.text+0x8a0): undefined reference to `__memcpy_chk'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Makefile:259: hpricot_scan.so] エラー 1
+
+make failed, exit code 2
