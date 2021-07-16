@@ -1,0 +1,17 @@
+<h1>タスクの新規作成</h1>
+
+<div class="nav justify-content-end">
+  <%= link_to '一覧', tasks_path, class: "nav-link" %>
+</div>
+
+<%= form_with model: @task, lacal: true do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control', id: "task_name" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, row: 5, class: "form-control", id: "description" %>
+  </div>
+  <%= f.submit nil, class: "btn-primary" %>
+<% end %>
